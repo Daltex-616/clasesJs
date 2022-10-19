@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>condicionales</h1>
+</body>
+<script>
+//     if (condición) {
+//      ejecuta el código de al ser verdadera la condición
+// }
+
+// ejecuta otro código
+let trolo = "cagon"
+
+if (trolo == true){
+    console.log("joel es el trolo")
+}else{
+    console.log("fer es el trolo")
+}
+
+
+let contraseña = null
+
+if(contraseña == null){
+    console.error("no se ingreso una contraseña")
+}else{
+    console.log("contraseña ingresada")
+}
+
+
+// operadores or || y and &&
+
+
+if(contraseña == null && trolo == true){
+    console.log("joel es trolo y no ingreso la contraseña")
+}else if (contraseña == null && trolo != false){
+    console.log("el trolo es fernando y no sabe la contraseña")
+}else{
+    console.log("fer y joel no son trolos e ingresaron la contraseña")
+}
+
+let a = 1
+let b = 2
+let c = 3
+
+if (a > b){
+    if(a > c){
+        console.log("a es el numeor mayor")
+      }
+}else if (b > c){
+    console.log("b es el numero mayor")
+}else{
+    console.log("el c es el mayor")
+}
+
+if (a > b && a >c){
+    console.log(`${a} es el numero mayor`)
+}else if (b > a && b > c){
+    console.log(`${b} es el numero mayor`)
+}else{
+    console.log(`${c} es el mayor`)
+}
+
+// con  el nombre, la edad y el sexo de cualquier persona e 
+// imprima, solo si la persona es de sexo masculino y mayor de edad, el nombre de 
+// la persona
+
+let nombre = "federico"
+let edad = 26
+let sexo = "masculino"
+
+if (edad >= 18 && sexo == "masculino"){
+    console.log(`la persona ${nombre} es del sexo ${sexo} y con la edad de ${edad} años cumple los requitos`)
+
+}else{
+    console.log("no cumple con los requisitos")
+}
+</script>
+</html>
